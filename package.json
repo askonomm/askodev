@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build": "wget https://github.com/askonomm/vau/releases/download/v0.0.2/vau-linux && mv vau-linux vau && ./vau"
+    "build": "curl -O -L https://github.com/askonomm/vau/releases/latest/download/vau-linux && chmod +x vau-linux && ./vau-linux"
   }
 }
