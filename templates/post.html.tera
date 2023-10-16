@@ -1,0 +1,11 @@
+{% extends "layout.html.tera" %}
+
+{% block content %}
+    <h1>Asko Nõmm</h1>
+
+    <div class="post">
+        <h2>{{ post.data.title }}</h2>
+        <div class="date">{{ post.data.date }}</div>
+        <div class="entry">{{ post.data.content }}</div>
+    </div>
+{% endblock %}
