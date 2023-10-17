@@ -5,7 +5,7 @@
 {% block content %}
     <div class="post">
         <h2 class="post-title"><a href="/blog/{{ post.data.slug }}">{{ post.data.title }}</a></h2>
-        <div class="date">{{ post.data.date | date(format="%b %m, %Y") }}</div>
+        <div class="date">{{ post.data.date | date(format="%b %d, %Y") }}</div>
         <div class="entry">{{ post.data.content }}</div>
     </div>
 {% endblock %}

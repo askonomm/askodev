@@ -11,7 +11,7 @@
         {% for post in posts %}
             <li>
                 <a href="/blog/{{ post.data.slug }}">{{ post.data.title }}</a>
-                <span>{{ post.data.date | date(format="%b %m, %Y") }}</span>
+                <span>{{ post.data.date | date(format="%b %d, %Y") }}</span>
             </li>
         {% endfor %}
     </ul>
