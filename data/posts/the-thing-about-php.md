@@ -8,7 +8,7 @@ status: published
 Oh, PHP. The internet's most hated language. Yet, so many got their start with it, including me. 
 While for the past 5 years I haven't been writing any PHP because I've been busy building software with 
 [Clojure](https://clojure.org/), I've recently become a freelance consultant instead of a contractor that I've previously been and 
-a lot of (the majority even) of work that comes my way is PHP. I don't mind, turns out it pays as much 
+a lot (the majority even) of work that comes my way is PHP. I don't mind, turns out it pays as much 
 as Clojure does so long as you're not a 9-5 employee and can thus negotiate better rates.
 
 But, do I like PHP? What is it exactly that I think about PHP? Would I use it for my personal projects?
