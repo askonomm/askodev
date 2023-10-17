@@ -1,7 +1,9 @@
 {% extends "layout.html.tera" %}
 
+{% block title %}{{ post.data.title }}{% endblock %}
+
 {% block content %}
-    <h1>Asko Nõmm</h1>
+    <h1><a href="/">Asko Nõmm</a></h1>
 
     <div class="post">
         <h2>{{ post.data.title }}</h2>
