@@ -41,7 +41,7 @@ _Bad_ in that it's increasingly becoming a standard to write over-engineered OO 
 stuff, which while I have nothing really against OO is just stupid over-abstraction in my opinion. Navigating, for example, 
 [Laravel](https://laravel.com/)'s code to find out how something under the hood is implemented is like trying to find a unicorn.
 
-And bad also because the type system it has is very half-baked. You can't return an array of typed objects (e.g `array<Interface>`, you can only return 
+And bad also because the type system it has is very half-baked. You can't return an array of typed objects (e.g `array<Interface>`), you can only return 
 `array`. There are no generics, and from what I understand for some odd reason [will never be](https://www.reddit.com/r/PHP/comments/j65968/comment/g7zg9mt/) even though [Hack](https://hacklang.org/) forked from PHP and 
 managed to add them? 
 
