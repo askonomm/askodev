@@ -124,6 +124,12 @@
             margin-bottom: 0;
         }
 
+        .posts li a {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
         .posts li span {
             font-family: "Inter", sans-serif;
             font-size: 12px;
