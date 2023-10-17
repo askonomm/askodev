@@ -9,7 +9,7 @@
             font-size: 15px;
             line-height: 1.75;
             max-width: 575px;
-            margin: 50px auto;
+            margin: 50px;
         }
     </style>
 </head>
