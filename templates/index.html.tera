@@ -3,27 +3,26 @@
 {% block title %}Freelance software consultant{% endblock %}
 
 {% block content %}
-    <h1>Asko Nõmm</h1>
-
     <p>Hi! I'm Asko, a freelance software consultant based out of Tallinn, Estonia. You can get in touch with me via asko@asko.dev.</p>
 
     <h2>Blog</h2>
 
-    <ul>
+    <ul class="posts">
         {% for post in posts %}
-            <li><a href="/blog/{{ post.data.slug }}">{{ post.data.title }}</a> ({{ post.data.date }})</li>
+            <li>
+                <a href="/blog/{{ post.data.slug }}">{{ post.data.title }}</a>
+                <span>{{ post.data.date | date(format="%b %m, %Y") }}</span>
+            </li>
         {% endfor %}
     </ul>
 
     <h2>Projects</h2>
 
-    <ul>
+    <ul class="projects">
         {% for project in projects %}
             <li>
-                <a href="{{ project.data.url }}">
-                    <h3>{{ project.data.title }}</h3>
-                    {{ project.data.content }}
-                </a>
+                <h3><a href="{{ project.data.url }}">{{ project.data.title }}</a></h3>
+                {{ project.data.content }}
             </li>
         {% endfor %}
     </ul>

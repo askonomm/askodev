@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} &mdash; Asko Nõmm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@500;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
         *, *:before, *:after {
             box-sizing: border-box;
+            list-style: none;
+            position: relative;
+            padding: 0;
+            margin: 0;
         }
 
         body {
-            font-family: system-ui;
+            font-family: "Merriweather", serif;
             font-size: 15px;
             line-height: 1.75;
             letter-spacing: -0.1px;
@@ -17,19 +25,32 @@
             margin: 50px;
         }
 
+        @media all and (max-width: 675px) {
+            body {
+                width: 100%;
+                padding: 30px;
+                margin: 0;
+            }
+        }
+
         h1 {
+            font-family: "Inter", sans-serif;
             font-size: 12px;
+            font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 2px;
+            margin-bottom: 30px;
         }
 
         h1 a {
-            color: #111;
+            color: #fff;
             text-decoration: none;
+            background: #111;
+            padding: 2px 4px;
         }
 
         code {
-            font-family: monospace;
+            font-family: "Courier Prime", monospace;
             font-size: 14px;
             background: #eee;
             padding: 2px 4px;
@@ -44,6 +65,14 @@
             margin-bottom: 30px;
         }
 
+        @media all and (max-width: 675px) {
+            pre {
+                width: calc(100% + 60px);
+                padding: 30px;
+                margin-left: -30px;
+            }
+        }
+
         pre code {
             padding: 0;
         }
@@ -53,17 +82,82 @@
         }
 
         h2 {
+            font-size: 22px;
             line-height: 1.25;
             margin-top: 60px;
             margin-bottom: 25px;
         }
 
+        h2.post-title {
+            font-family: "Inter", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            margin-top: 0;
+        }
+
+        h2.post-title a {
+            color: #111;
+            text-decoration: none;
+        }
+
         .date {
+            font-family: "Inter", sans-serif;
+            font-size: 13px;
             color: #999;
+            margin-top: -15px;
+            margin-bottom: 30px;
+        }
+
+        .posts {
+            margin-bottom: 80px;
+        }
+
+        .posts li {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .posts li:last-child {
+            margin-bottom: 0;
+        }
+
+        .posts li span {
+            font-family: "Courier Prime", sans-serif;
+            font-size: 11px;
+            color: #111;
+            line-height: 1;
+            text-transform: uppercase;
+            background: #eee;
+            align-self: baseline;
+            padding: 5px 6px 3px;
+            margin-top: 4px;
+        }
+
+        .projects li {
+            margin-bottom: 30px;
+        }
+
+        .projects li:last-child {
+            margin-bottom: 0;
+        }
+
+        .projects li h3 {
+            font-size: 17px;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+
+        .projects li p {
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
+
+    <h1><a href="/">Asko Nõmm</a></h1>
 
     {% block content %}{% endblock %}
 
