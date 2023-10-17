@@ -4,12 +4,62 @@
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %} &mdash; Asko Nõmm</title>
     <style>
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: system-ui;
             font-size: 15px;
             line-height: 1.75;
+            letter-spacing: -0.1px;
             max-width: 575px;
             margin: 50px;
+        }
+
+        h1 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h1 a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        code {
+            font-family: monospace;
+            font-size: 14px;
+            background: #eee;
+            padding: 2px 4px;
+        }
+
+        pre {
+            width: calc(100% + 50px);
+            background: #eee;
+            padding: 10px 20px;
+            overflow: auto;
+            margin-left: -50px;
+            margin-bottom: 30px;
+        }
+
+        pre code {
+            padding: 0;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            line-height: 1.25;
+            margin-top: 60px;
+            margin-bottom: 25px;
+        }
+
+        .date {
+            color: #999;
         }
     </style>
 </head>

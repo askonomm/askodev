@@ -1,7 +1,7 @@
 ---
 title: GLIBC and MUSL
 slug: glibc-and-musl
-date: 2022-10-17
+date: 2023-10-17
 status: published
 ---
 
