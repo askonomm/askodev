@@ -1,0 +1,30 @@
+[[data]]
+name = "recent_posts"
+collection = "posts"
+when_is = { key = "status", equals = "published" }
+sort = { key = "date", order = "desc" }
+limit = 10
+
+[[data]]
+name = "posts"
+collection = "posts"
+when_is = { key = "status", equals = "published" }
+sort = { key = "date", order = "desc" }
+
+[[data]]
+name = "projects"
+collection = "projects"
+sort = { key = "order", order = "asc" }
+
+[[pages]]
+collection = "posts"
+page = { path = "blog/{slug}/index.html" }
+template = "post.html.tera"
+
+[[pages]]
+page = { path = "index.html" }
+template = "index.html.tera"
+
+[[pages]]
+page = { path = "feed.xml" }
+template = "feed.xml.tera"

@@ -13,6 +13,7 @@
 
     <meta property="og:url" content="https://asko.dev{% if post %}/blog/{{ post.data.slug }}{% endif %}" />
     <title>{% block title %}{% endblock %} - Asko Nõmm</title>
+    <link rel="alternate" type="application/atom+xml" href="https://asko.dev/feed.xml" title="Asko Nõmm ATOM Feed" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@500;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">

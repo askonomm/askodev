@@ -1,12 +1,12 @@
 {% extends "layout.html.tera" %}
 
-{% block title %}{{ post.data.title }}{% endblock %}
-{% block og_title %}{{ post.data.title }}{% endblock %}
+{% block title %}{{ record.data.title }}{% endblock %}
+{% block og_title %}{{ record.data.title }}{% endblock %}
 
 {% block content %}
     <div class="post">
-        <h2 class="post-title"><a href="/blog/{{ post.data.slug }}">{{ post.data.title }}</a></h2>
-        <div class="date">{{ post.data.date | date(format="%b %d, %Y") }}</div>
-        <div class="entry">{{ post.data.content }}</div>
+        <h2 class="post-title"><a href="/blog/{{ record.data.slug }}">{{ record.data.title }}</a></h2>
+        <div class="date">{{ record.data.date | date(format="%b %d, %Y") }}</div>
+        <div class="entry">{{ record.data.content }}</div>
     </div>
 {% endblock %}

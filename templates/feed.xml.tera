@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://asko.dev/</id>
+    <title>Asko Nõmm</title>
+    <link href="https://asko.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <updated>{{ posts[0].data.date | date(format="%+") }}</updated>
+    <author>
+        <name>Asko Nõmm</name>
+    </author>
+
+    {% for post in posts %}
+    <entry>
+        <title>{{ post.data.title }}</title>
+        <link href="https://asko.dev/blog/{{ post.data.slug }}"/>
+        <id>https://asko.dev/blog/{{ post.data.slug }}</id>
+        <published>{{ post.data.date | date(format="%+") }}</published>
+        <updated>{{ post.data.date | date(format="%+") }}</updated>
+        <content type="html" xml:lang="en">
+            {{ post.data.content | escape }}
+        </content>
+    </entry>
+    {% endfor %}
+</feed>
