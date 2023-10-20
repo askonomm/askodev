@@ -3,7 +3,10 @@
 {% block title %}Freelance software consultant{% endblock %}
 
 {% block content %}
-    <p>Hi! I'm Asko, a freelance software consultant based out of Tallinn, Estonia. You can get in touch with me via asko@asko.dev.</p>
+    <p>
+        Hi! I'm Asko, a freelance software consultant based out of Tallinn, Estonia. You can get in touch with me via
+        <a href="mailto:asko@asko.dev">asko@asko.dev</a>.
+    </p>
 
     <h2>Blog</h2>
 

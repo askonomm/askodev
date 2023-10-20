@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@500;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script defer data-domain="asko.dev" src="https://plausible.io/js/script.js"></script>
     <style>
         *, *:before, *:after {
             box-sizing: border-box;
@@ -102,7 +103,7 @@
             font-family: "Inter", sans-serif;
             font-size: 28px;
             font-weight: 700;
-            letter-spacing: -1.5px;
+            letter-spacing: -1px;
             margin-top: 0;
         }
 
@@ -154,6 +155,10 @@
             margin-top: 7px;
         }
 
+        .entry h2 {
+            font-family: "Inter", sans-serif;
+        }
+
         .projects li {
             margin-bottom: 30px;
         }
@@ -179,6 +184,13 @@
         .projects li p {
             font-size: 14px;
         }
+
+        .footer {
+            font-family: "Inter", sans-serif;
+            color: #999;
+            font-size: 13px;
+            margin-top: 60px;
+        }
     </style>
 </head>
 <body>
@@ -186,6 +198,10 @@
     <h1><a href="/">Asko Nõmm</a></h1>
 
     {% block content %}{% endblock %}
+
+    <div class="footer">
+        &copy 2023 Asko Nõmm.
+    </div>
 
 </body>
 </html>
