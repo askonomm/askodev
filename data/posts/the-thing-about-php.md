@@ -85,3 +85,5 @@ raging on social media that PHP sucks or anything of the sort. Because of the no
 sort of affection I have towards it. And whether you like it or not, it runs most of the web, will probably 
 continue to do so because of its easy deployment story, [cheap workforce](https://survey.stackoverflow.co/2023/#technology-top-paying-technologies) and plethora of available software like content management 
 systems and e-commerce systems, both categories in which PHP dominates with WordPress and WooCommerce.
+
+So I guess the thing about PHP is that it's not as bad as people make it out to be, but it's also not as good as _I wished_ it would be.
