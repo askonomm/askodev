@@ -245,6 +245,8 @@
         .availability .month.past {
             color: #666;
             background: #eee;
+            pointer-events: none;
+            text-decoration: none;
         }
 
         .availability .month .fill {
