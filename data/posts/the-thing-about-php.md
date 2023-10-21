@@ -61,9 +61,12 @@ like how easy it is to publish and update PHP packages, by simply creating new t
 version of your library will become available instantly.
 
 The community also seems to be quite vibrant, active and ready to help anyone who is struggling to figure something out. 
+Though I do recommend Mastodon over Reddit for that, since the PHP community on Reddit seems to be quite toxic, but that 
+may be just what Reddit is all about, I don't know.
+
 There is now a [PHP Foundation](https://thephp.foundation/) which hopefully steers the language in the right direction, and perhaps also tries to lessen the 
 bad reputation the language has because while it's not the greatest language, I also do not think it deserves to be 
-as hated as it is. 
+as hated as it is.
 
 ## Would I use PHP for my own projects?
 
