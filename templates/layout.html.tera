@@ -211,6 +211,14 @@
             gap: 5px;
         }
 
+        @media all and (max-width: 675px) {
+            .availability .months {
+                width: calc(100% + 60px);
+                gap: 0;
+                margin-left: -30px;
+            }
+        }
+
         .availability .month {
             width: calc(100% / 12);
             line-height: 1.25;
@@ -224,7 +232,14 @@
             font-weight: 700;
             text-align: center;
             background: #136f63;
-            padding: 4px 4px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        @media all and (max-width: 675px) {
+            .availability .month {
+                font-size: 9px;
+            }
         }
 
         .availability .month.past {
@@ -238,6 +253,10 @@
             position: absolute;
             top: 0;
             left: 0;
+        }
+
+        .availability .month .percentage {
+            font-weight: 400;
         }
     </style>
 </head>
