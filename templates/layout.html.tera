@@ -159,6 +159,10 @@
             font-family: "Inter", sans-serif;
         }
 
+        .projects {
+            margin-bottom: 80px;
+        }
+
         .projects li {
             margin-bottom: 30px;
         }
