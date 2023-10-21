@@ -14,45 +14,29 @@
         {% set current_month = now() | date(format="%m") | int %}
 
         {% for x in availability.data[current_year] | split(pat="|") %}
-            {% if loop.index >= current_month %}
-                <div class="month">
-                    <div class="fill" style="width:{{ x | trim }}%"></div>
-                    <span>
-                        {% if loop.index == 1 %}Jan{% endif %}
-                        {% if loop.index == 2 %}Feb{% endif %}
-                        {% if loop.index == 3 %}Mar{% endif %}
-                        {% if loop.index == 4 %}Apr{% endif %}
-                        {% if loop.index == 5 %}May{% endif %}
-                        {% if loop.index == 6 %}Jun{% endif %}
-                        {% if loop.index == 7 %}Jul{% endif %}
-                        {% if loop.index == 8 %}Aug{% endif %}
-                        {% if loop.index == 9 %}Sep{% endif %}
-                        {% if loop.index == 10 %}Oct{% endif %}
-                        {% if loop.index == 11 %}Nov{% endif %}
-                        {% if loop.index == 12 %}Dec{% endif %}
-                            <br>
-                            {% set val = x | float %}
+            <div class="month{% if loop.index < current_month %} past {% endif %}">
+                <div class="fill" style="width:{{ x | trim }}%"></div>
+                <span>
+                    {% if loop.index == 1 %}Jan{% endif %}
+                    {% if loop.index == 2 %}Feb{% endif %}
+                    {% if loop.index == 3 %}Mar{% endif %}
+                    {% if loop.index == 4 %}Apr{% endif %}
+                    {% if loop.index == 5 %}May{% endif %}
+                    {% if loop.index == 6 %}Jun{% endif %}
+                    {% if loop.index == 7 %}Jul{% endif %}
+                    {% if loop.index == 8 %}Aug{% endif %}
+                    {% if loop.index == 9 %}Sep{% endif %}
+                    {% if loop.index == 10 %}Oct{% endif %}
+                    {% if loop.index == 11 %}Nov{% endif %}
+                    {% if loop.index == 12 %}Dec{% endif %}
+
+                    {% if loop.index >= current_month %}
+                        <br>
+                        {% set val = x | float %}
                         {{ 100 - val }}%
-                        </span>
-                </div>
-            {% else %}
-                <div class="month past">
-                    <span>
-                        {% if loop.index == 1 %}Jan{% endif %}
-                        {% if loop.index == 2 %}Feb{% endif %}
-                        {% if loop.index == 3 %}Mar{% endif %}
-                        {% if loop.index == 4 %}Apr{% endif %}
-                        {% if loop.index == 5 %}May{% endif %}
-                        {% if loop.index == 6 %}Jun{% endif %}
-                        {% if loop.index == 7 %}Jul{% endif %}
-                        {% if loop.index == 8 %}Aug{% endif %}
-                        {% if loop.index == 9 %}Sep{% endif %}
-                        {% if loop.index == 10 %}Oct{% endif %}
-                        {% if loop.index == 11 %}Nov{% endif %}
-                        {% if loop.index == 12 %}Dec{% endif %}
-                    </span>
-                </div>
-            {% endif %}
+                    {% endif %}
+                </span>
+            </div>
         {% endfor %}
     </div>
 </div>
