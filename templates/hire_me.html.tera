@@ -1,0 +1,39 @@
+<h2>Hire me</h2>
+
+<p>
+    I offer problem-solving abilities in a variety of technological stacks with languages such as JavaScript, TypeScript, PHP, Java, and Python,
+    working on API's, web applications, and mobile applications. If you have a project that you would like to discuss, please get in touch via
+    <a href="mailto:asko@asko.dev">asko@asko.dev</a>.
+</p>
+
+<div class="availability">
+    <h3>Availability this year</h3>
+
+    <div class="months">
+        {% set current_year = now() | date(format="%Y") %}
+        {% for x in availability.data[current_year] | split(pat="|") %}
+            {% if x != " _ " and x != "_ " %}
+                <div class="month">
+                    <div class="fill" style="width:{{ x | trim }}%"></div>
+                    <span>
+                            {% if loop.index == 1 %}Jan{% endif %}
+                        {% if loop.index == 2 %}Feb{% endif %}
+                        {% if loop.index == 3 %}Mar{% endif %}
+                        {% if loop.index == 4 %}Apr{% endif %}
+                        {% if loop.index == 5 %}May{% endif %}
+                        {% if loop.index == 6 %}Jun{% endif %}
+                        {% if loop.index == 7 %}Jul{% endif %}
+                        {% if loop.index == 8 %}Aug{% endif %}
+                        {% if loop.index == 9 %}Sep{% endif %}
+                        {% if loop.index == 10 %}Oct{% endif %}
+                        {% if loop.index == 11 %}Nov{% endif %}
+                        {% if loop.index == 12 %}Dec{% endif %}
+                            <br>
+                            {% set val = x | float %}
+                        {{ 100 - val }}%
+                        </span>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

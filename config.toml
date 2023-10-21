@@ -16,6 +16,12 @@ name = "projects"
 collection = "projects"
 sort = { key = "order", order = "asc" }
 
+[[data]]
+name = "availability"
+collection = "cabinet"
+when_is = { key = "id", equals = "availability" }
+first = true
+
 [[pages]]
 collection = "posts"
 page = { path = "blog/{slug}/index.html" }

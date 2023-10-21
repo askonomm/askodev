@@ -10,7 +10,7 @@ the norm. Of course, I would check for things with `is_some`, `is_none`, `is_ok`
 I'm not a psychopath, but in the end of the day, I would still `unwrap` everything. 
 
 Then I discovered that I can just use `?` instead, and capture all the errors in one big generic enum. 
-This is made especially easy using `thiserror` crate, with what my code can now look like this:
+This is made especially easy using the [`thiserror`](https://github.com/dtolnay/thiserror) crate, with what my code can now look like this:
 
 ```rust
 #[derive(Error, Debug)]
@@ -28,7 +28,9 @@ fn main() -> Result<(), Error> {
     let response = reqwest::get(url)?;
     let body = response.text()?;
     let json: Value = serde_json::from_str(&body)?;
+    
     println!("{}", json);
+    
     Ok(())
 }
 ```

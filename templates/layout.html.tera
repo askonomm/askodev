@@ -191,6 +191,46 @@
             font-size: 13px;
             margin-top: 60px;
         }
+
+        .availability {
+
+        }
+
+        .availability h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            color: #111;
+            letter-spacing: .5px;
+            margin-bottom: 10px;
+        }
+
+        .availability .months {
+            display: flex;
+            gap: 5px;
+        }
+
+        .availability .month {
+            width: calc(100% / 12);
+            line-height: 1.25;
+            font-family: "Inter", sans-serif;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            background: #136f63;
+            padding: 4px 4px;
+        }
+
+        .availability .month .fill {
+            height: 100%;
+            background: #d00000;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     </style>
 </head>
 <body>

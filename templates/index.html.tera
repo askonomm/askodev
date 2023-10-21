@@ -36,4 +36,6 @@
             </li>
         {% endfor %}
     </ul>
+
+    {% include "hire_me.html.tera" %}
 {% endblock %}
