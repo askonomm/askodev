@@ -214,6 +214,9 @@
         .availability .month {
             width: calc(100% / 12);
             line-height: 1.25;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: "Inter", sans-serif;
             font-size: 10px;
             text-transform: uppercase;
@@ -222,6 +225,11 @@
             text-align: center;
             background: #136f63;
             padding: 4px 4px;
+        }
+
+        .availability .month.past {
+            color: #666;
+            background: #eee;
         }
 
         .availability .month .fill {
