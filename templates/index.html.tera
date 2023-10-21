@@ -28,7 +28,7 @@
                     <a href="{{ project.data.url }}">{{ project.data.title }}</a>
                     <span class="langs">
                         {% for language in project.data.language | split(pat=",") %}
-                            <span class="lang">{{ language | trim }}</span>
+                            <span class="lang" data-lang="{{ language | trim }}">{{ language | trim }}</span>
                         {% endfor %}
                     </span>
                 </h3>
