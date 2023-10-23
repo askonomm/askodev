@@ -99,6 +99,11 @@
             margin-bottom: 25px;
         }
 
+        h2 code {
+            font-size: inherit;
+            font-weight: 400;
+        }
+
         h2.post-title {
             font-family: "Inter", sans-serif;
             font-size: 28px;
@@ -115,6 +120,22 @@
         img {
             width: 100%;
             height: auto;
+        }
+
+        hr {
+            width: calc(100% + 50px);
+            border: 0;
+            border-top: 2px solid #ddd;
+            margin: 0;
+            margin-left: -50px;
+            margin-bottom: 30px;
+        }
+
+        @media all and (max-width: 675px) {
+            hr {
+                width: calc(100% + 60px);
+                margin-left: -30px;
+            }
         }
 
         .date {
@@ -157,6 +178,20 @@
 
         .entry h2 {
             font-family: "Inter", sans-serif;
+        }
+
+        .entry ul {
+            margin-bottom: 30px;
+        }
+
+        .entry ul li {
+            list-style: square;
+            margin-left: 16px;
+            margin-bottom: 10px;
+        }
+
+        .entry ul > li:last-child {
+            margin-bottom: 0;
         }
 
         .projects {

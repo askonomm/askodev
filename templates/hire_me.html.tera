@@ -13,12 +13,10 @@
         {% set current_year = now() | date(format="%Y") %}
         {% set current_month = now() | date(format="%m") | int %}
 
-        {% for x in availability.data[current_year] | split(pat="|") %}
-            {% set val = x | float %}
-
+        {% for x in availability.data[current_year] %}
             <a class="month{% if loop.index < current_month %} past {% endif %}" href="mailto:asko@asko.dev?subject=Booking for {{ loop.index }}/{{ current_year }}">
                 {% if loop.index >= current_month %}
-                    <div class="fill" style="width:{{ 100 - val }}%"></div>
+                    <div class="fill" style="width:{{ 100 - x }}%"></div>
                 {% endif %}
                 <span>
                     {% if loop.index == 1 %}Jan{% endif %}
@@ -36,8 +34,7 @@
 
                     {% if loop.index >= current_month %}
                         <br>
-                        {% set val = x | float %}
-                        <span class="percentage">{{ val }}%</span>
+                        <span class="percentage">{{ x }}%</span>
                     {% endif %}
                 </span>
             </a>
