@@ -1,7 +1,8 @@
 {% extends "layout.html.tera" %}
 
 {% block title %}Freelance software consultant{% endblock %}
-
+{% block og_title %}Freelance software consultant{% endblock %}
+    
 {% block content %}
     <p>
         Hi! I'm Asko, a freelance software consultant based out of Tallinn, Estonia. You can get in touch with me via
@@ -10,14 +11,18 @@
 
     <h2>Blog</h2>
 
-    <ul class="posts">
-        {% for post in recent_posts %}
-            <li>
-                <a href="/blog/{{ post.data.slug }}">{{ post.data.title }}</a>
-                <span>{{ post.data.date | date(format="%b %d, %Y") }}</span>
-            </li>
-        {% endfor %}
-    </ul>
+    <div class="posts">
+        <ul>
+            {% for post in recent_posts %}
+                <li>
+                    <a href="/blog/{{ post.data.slug }}">{{ post.data.title }}</a>
+                    <span>{{ post.data.date | date(format="%b %d, %Y") }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <a href="/archive" class="btn archive-btn">Blog archive</a>
+    </div>
 
     <h2>Projects</h2>
 

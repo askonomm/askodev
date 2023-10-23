@@ -2,6 +2,7 @@
 title: Siena 3
 slug: siena-3
 date: 2023-10-23
+year: 2023
 status: published
 ---
 

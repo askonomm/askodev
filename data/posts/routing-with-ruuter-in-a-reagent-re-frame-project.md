@@ -2,6 +2,7 @@
 title: Routing with Ruuter in a Reagent / Re-frame project
 slug: routing-with-ruuter-in-a-reagent-re-frame-project
 date: 2023-02-27
+year: 2023
 status: published
 ---
 

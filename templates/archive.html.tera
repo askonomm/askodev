@@ -1,0 +1,23 @@
+{% extends "layout.html.tera" %}
+
+{% block title %}Blog Archive{% endblock %}
+{% block og_title %}Blog Archive{% endblock %}
+    
+{% block content %}
+    <h2>Archive</h2>
+
+    {% for year, items in posts | group_by(attribute="data.year") %}
+        <div class="archive-section">
+            <h3>{{ year }}</h3>
+            <ul class="posts">
+                {% for post in items %}
+                    <li>
+                        <a href="/blog/{{ post.data.slug }}">{{ post.data.title }}</a>
+                        <span>{{ post.data.date | date(format="%b %d") }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+
+{% endblock %}

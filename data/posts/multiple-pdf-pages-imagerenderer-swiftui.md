@@ -1,6 +1,7 @@
 ---
 title: Rendering a SwiftUI view to multiple A4 PDF pages using ImageRenderer
 date: 2023-07-08
+year: 2023
 slug: multiple-pdf-pages-imagerenderer-swiftui
 status: published
 ---

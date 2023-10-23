@@ -44,6 +44,10 @@
             }
         }
 
+        a {
+            color: #3D52D5;
+        }
+
         h1 {
             font-family: "Inter", sans-serif;
             font-size: 12px;
@@ -315,6 +319,42 @@
 
         .availability .month .percentage {
             font-weight: 400;
+        }
+
+        .archive-section {
+            margin-bottom: 80px;
+        }
+
+        .archive-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .archive-section h3 {
+            font-size: 12px;
+            font-family: "Inter", sans-serif;
+            color: #111;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            color: #fff;
+            background: #3D52D5;
+            padding: 2px 6px;
+        }
+
+        .btn:visited {
+            color: #fff;
+        }
+
+        .archive-btn {
+            display: inline-block;
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 25px;
         }
     </style>
 </head>

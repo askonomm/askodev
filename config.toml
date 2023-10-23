@@ -3,7 +3,7 @@ name = "recent_posts"
 collection = "posts"
 when_is = { key = "status", equals = "published" }
 sort = { key = "date", order = "desc" }
-limit = 10
+limit = 6
 
 [[data]]
 name = "posts"
@@ -30,6 +30,10 @@ template = "post.html.tera"
 [[pages]]
 page = { path = "index.html" }
 template = "index.html.tera"
+
+[[pages]]
+page = { path = "archive/index.html"}
+template = "archive.html.tera"
 
 [[pages]]
 page = { path = "feed.xml" }
