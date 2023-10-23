@@ -9,7 +9,7 @@ I'm happy to announce the immediate availability of [Siena 3](https://github.com
 
 ## YAML and FrontMatter data parsing improvements
 
-YAML parsing has much improved. When previously YAML parsing only supported `HashMap<String, String>`, as in root level key-value only and nothing else, then now the YAML parser supports a variety of new data structures such as `String`, `usize`, `bool`, `Vec<RecordData>` and `HashMap<RecordData>` where `RecordData` is:
+YAML parsing has much improved. When previously YAML parsing only supported `HashMap<String, String>`, as in root level key-value only and nothing else, then now the YAML parser supports a variety of new data structures such as `String`, `usize`, `bool`, `Vec<RecordData>` and `HashMap<String, RecordData>` where `RecordData` is:
 
 ```rust
 pub enum RecordData {
@@ -35,7 +35,7 @@ I renamed the `RecordSortOrder::Custom` to `CustomStr` because I also introduced
 
 ---
 
-I dog food Siena myself for this very website actually, in [Vau](https://github.com/askonomm/vau), my in-progress static site generator, and the above improvements are a direct result of me wanting to use Siena for my own purposes and finding it lacking. Dogfooding is great!
+I dogfood Siena myself for this very website actually, in [Vau](https://github.com/askonomm/vau), my in-progress static site generator, and the above improvements are a direct result of me wanting to use Siena for my own purposes and finding it lacking. Dogfooding is great!
 
 
 
