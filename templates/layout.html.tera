@@ -234,25 +234,21 @@
         .projects li h3 span span {
             font-family: "Inter", sans-serif;
             font-size: 13px;
-            background: #eee;
             padding: 2px 4px;
             margin-left: 10px;
         }
 
         .projects li h3 span span[data-lang="PHP"] {
-            color: #fff;
-            background: #7A86B8;
+            border: 2px solid #7A86B8;
         }
 
         .projects li h3 span span[data-lang="Clojure"],
         .projects li h3 span span[data-lang="ClojureScript"] {
-            color: #111;
-            background: #5cc70c;
+            border: 2px solid #5cc70c;
         }
 
         .projects li h3 span span[data-lang="Rust"] {
-            color: #fff;
-            background: #a72145;
+            border: 2px solid #a72145;
         }
 
         .projects li p {
