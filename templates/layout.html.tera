@@ -31,6 +31,7 @@
             font-family: "Merriweather", serif;
             font-size: 15px;
             line-height: 1.75;
+            color: #373737;
             letter-spacing: -0.1px;
             max-width: 575px;
             margin: 50px;
@@ -45,12 +46,12 @@
         }
 
         a {
-            color: #1057b2;
+            color: #111;
         }
 
         a.btn {
             color: #fff;
-            background: #1057b2;
+            background: #111;
             padding: 2px 6px;
         }
 
@@ -311,6 +312,11 @@
         .availability .month.past {
             color: #666;
             background: #eee;
+            pointer-events: none;
+            text-decoration: none;
+        }
+
+        .availability .month.booked {
             pointer-events: none;
             text-decoration: none;
         }
