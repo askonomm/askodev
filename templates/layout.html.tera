@@ -169,8 +169,7 @@
         }
 
         .posts li {
-            display: grid;
-            grid-template-columns: 1fr auto;
+            display: flex;
             gap: 30px;
             margin-bottom: 20px;
         }
@@ -191,6 +190,7 @@
             color: #bbb;
             line-height: 1;
             align-self: baseline;
+            min-width: 75px;
             margin-top: 7px;
         }
 
