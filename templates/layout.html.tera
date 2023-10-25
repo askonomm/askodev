@@ -52,7 +52,14 @@
         a.btn {
             color: #fff;
             background: #111;
+            box-shadow: 3px 3px 0px red;
             padding: 2px 6px;
+        }
+
+        a.btn:active {
+            box-shadow: 1px 1px 0px red;
+            top: 2px;
+            left: 2px;
         }
 
         h1 {
