@@ -37,6 +37,13 @@
             margin: 50px;
         }
 
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #e5e5e5;
+                background: #111;
+            }
+        }
+
         @media all and (max-width: 675px) {
             body {
                 width: 100%;
@@ -49,11 +56,24 @@
             color: #111;
         }
 
+        @media (prefers-color-scheme: dark) {
+            a {
+                color: #fff;
+            }
+        }
+
         a.btn {
             color: #fff;
             background: #111;
             box-shadow: 3px 3px 0px red;
             padding: 2px 6px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            a.btn {
+                color: #111;
+                background: #fff;
+            }
         }
 
         a.btn:active {
@@ -85,6 +105,12 @@
             padding: 2px 4px;
         }
 
+        @media (prefers-color-scheme: dark) {
+            code {
+                background: #272727;
+            }
+        }
+
         pre {
             width: calc(100% + 50px);
             background: #eee;
@@ -92,6 +118,12 @@
             overflow: auto;
             margin-left: -50px;
             margin-bottom: 30px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            pre {
+                background: #272727;
+            }
         }
 
         @media all and (max-width: 675px) {
@@ -135,6 +167,12 @@
             text-decoration: none;
         }
 
+        @media (prefers-color-scheme: dark) {
+            h2.post-title a {
+                color: #fff;
+            }
+        }
+
         img {
             width: 100%;
             height: auto;
@@ -147,6 +185,12 @@
             margin: 0;
             margin-left: -50px;
             margin-bottom: 30px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            hr {
+                border-top: 2px solid #373737;
+            }
         }
 
         @media all and (max-width: 675px) {
@@ -162,6 +206,12 @@
             color: #999;
             margin-top: -15px;
             margin-bottom: 30px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .date {
+                color: #666;
+            }
         }
 
         .posts {
@@ -192,6 +242,12 @@
             align-self: baseline;
             min-width: 75px;
             margin-top: 7px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .posts li span {
+                color: #666;
+            }
         }
 
         .entry h2 {
@@ -262,6 +318,12 @@
             margin-top: 60px;
         }
 
+        @media (prefers-color-scheme: dark) {
+            .footer {
+                color: #555;
+            }
+        }
+
         .availability {
 
         }
@@ -274,6 +336,12 @@
             color: #111;
             letter-spacing: .5px;
             margin-bottom: 10px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .availability h3 {
+                color: #fff;
+            }
         }
 
         .availability .months {
@@ -319,6 +387,13 @@
             text-decoration: none;
         }
 
+        @media (prefers-color-scheme: dark) {
+            .availability .month.past {
+                color: #eee;
+                background: #272727;
+            }
+        }
+
         .availability .month.booked {
             pointer-events: none;
             text-decoration: none;
@@ -351,6 +426,12 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 15px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .archive-section h3 {
+                color: #fff;
+            }
         }
 
         .archive-btn {
