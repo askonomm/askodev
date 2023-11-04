@@ -21,7 +21,7 @@
             {% endfor %}
         </ul>
 
-        <a href="/archive" class="btn archive-btn">Blog archive</a>
+        <a href="/archive" class="btn secondary archive-btn">Blog archive</a>
     </div>
 
     <h2>Projects</h2>
