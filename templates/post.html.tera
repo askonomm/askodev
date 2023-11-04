@@ -1,7 +1,7 @@
 {% extends "layout.html.tera" %}
 
-{% block title %}{{ record.data.title }}{% endblock %}
-{% block og_title %}{{ record.data.title }}{% endblock %}
+{% block title %}{{ record.data.title | striptags }}{% endblock %}
+{% block og_title %}{{ record.data.title | striptags }}{% endblock %}
 
 {% block content %}
     <div class="post">
