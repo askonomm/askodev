@@ -132,6 +132,7 @@
             font-family: "Courier Prime", monospace;
             font-size: 14px;
             background: #eee;
+            border-radius: 5px;
             padding: 2px 4px;
         }
 
@@ -143,11 +144,21 @@
 
         pre {
             width: calc(100% + 50px);
-            background: #eee;
+            background: #f5f5f5;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top: 2px solid #111;
+            border-right: 2px solid #111;
+            border-bottom: 2px solid #111;
+            box-shadow: 3px 3px 0 #e5e5e5;
             padding: 10px 20px;
             overflow: auto;
             margin-left: -50px;
             margin-bottom: 30px;
+        }
+
+        pre code {
+            background: transparent;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -269,8 +280,9 @@
             font-size: 12px;
             color: #bbb;
             line-height: 1;
+            white-space: nowrap;
             align-self: baseline;
-            min-width: 75px;
+            min-width: 80px;
             margin-top: 7px;
         }
 
@@ -386,14 +398,14 @@
 
         @media all and (max-width: 675px) {
             .availability .months {
-                width: calc(100% + 60px);
-                gap: 0;
-                margin-left: -30px;
+                flex-wrap: wrap;
+                gap: 10px;
             }
         }
 
         .availability .month {
             width: calc(100% / 12);
+            height: 30px;
             line-height: 1.25;
             display: flex;
             justify-content: center;
