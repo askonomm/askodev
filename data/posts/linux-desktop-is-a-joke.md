@@ -26,7 +26,7 @@ The horrible design and performance issues made me not want to use Linux Mint.
 
 ## Elementary OS
 
-Arguably the only Linux distro that is developed with actual designers on the team I was very tempted to use [Elementary OS](https://elementary.io/). Though it again is based on Ubuntu, so I was a little scared, but it seemed to work fine. What did not work fine however was the fact that it has no fractional scaling support at all, which meant it was completely unusable on HiDPI displays, and from googling it seemed the team was not interested in even fixing that. 
+Arguably the only Linux distro that is developed with actual designers on the team. I was very tempted to use [Elementary OS](https://elementary.io/). Though it again is based on Ubuntu, so I was a little scared, but it seemed to work fine. What did not work fine however was the fact that it has no fractional scaling support at all, which meant it was completely unusable on HiDPI displays, and from googling it seemed the team was not interested in even fixing that. 
 
 The recommended fix that the team had was to change the text size in settings, which worked fine to a degree, but left window titlebar icons way too small to be easily clickable. Unfortunately fractional scaling support is pretty important on a HiDPI display and that meant this OS simply was not going to cut it.
 
