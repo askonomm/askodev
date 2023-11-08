@@ -12,7 +12,7 @@ Yesterday I tried putting Linux on a spare laptop of mine. It's a 2023 model, no
 
 Probably the most known Linux distro is Ubuntu. So I got the latest version, Ubuntu 23. Once installed and logged in, the OS told me that there are a bunch of updates I should install, so I did like it instructed me to do. After restarting the computer, like it told me to do after updates, I was no longer able to get into the OS because all I was greeted with was a black screen and a error `Malformed MSFT vendor event`, which upon Googling I found to apparently mean a million different things, none of which helped me get the operating system back working.
 
-And honestly, if simple updates that the OS itself suggests completely bricks the OS, is it really meant for professional use? I don't think so. I don't want ot _fix_ an OS, I want to use one.
+And honestly, if simple updates that the OS itself suggests completely bricks the OS, is it really meant for professional use? I don't think so. I don't want to _fix_ an OS, I want to use one.
 
 ## Linux Mint
 
